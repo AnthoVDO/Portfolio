@@ -82,4 +82,11 @@ th:not([align]) {
   text-align: left;
 }
 
+h1 {
+  color: blue;
+}
+h1:hover {
+  color: #000099;
+}
+
 /*# sourceMappingURL=style.css.map */

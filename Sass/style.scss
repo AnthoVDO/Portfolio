@@ -1,1 +1,7 @@
 @import "libs/minireset.scss";
+h1 {
+    color: blue;
+    &:hover {
+        color: darken($color: blue, $amount: 20);
+    }
+}

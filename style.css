@@ -82,22 +82,15 @@ th:not([align]) {
   text-align: left;
 }
 
-h1 {
-  display: block;
-}
-
+h1,
 h2 {
-  display: block;
-}
-
-section h1 {
-  padding: 2rem;
+  width: 100%;
   text-align: center;
 }
 
-section h2 {
-  text-align: center;
-  padding: 2rem;
+h2,
+h3 {
+  font-size: 3rem;
 }
 
 body {
@@ -110,8 +103,11 @@ a {
 }
 
 .btn {
+  text-align: center;
   border: solid 0.15rem;
-  border-radius: 0.125rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  text-transform: uppercase;
   background-color: #086cca;
 }
 .btn:hover {
@@ -123,6 +119,10 @@ section {
   justify-content: center;
   height: 100vh;
   flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#welcome-section {
   align-items: center;
 }
 
@@ -130,25 +130,52 @@ nav {
   position: fixed;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   align-content: center;
   width: 100%;
   background-color: #1b1b1b;
+  height: 3rem;
+}
+nav header {
+  padding-left: 1rem;
 }
 
 nav ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding-right: 1rem;
 }
 
 nav ul li {
   padding: 0.7rem;
+  text-transform: uppercase;
+}
+
+section header {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  padding-top: 4rem;
+}
+
+#welcome-section h1 {
+  width: 100%;
+  padding-top: 25%;
+  font-size: 4rem;
+}
+#welcome-section h2 {
+  width: 100%;
+  padding-bottom: 25%;
+  font-size: 2rem;
 }
 
 #about {
   background-color: #ffba00;
+}
+#about article {
+  display: block;
 }
 
 #projects {

@@ -83,10 +83,80 @@ th:not([align]) {
 }
 
 h1 {
-  color: blue;
+  display: block;
 }
-h1:hover {
-  color: #000099;
+
+h2 {
+  display: block;
+}
+
+section h1 {
+  padding: 2rem;
+  text-align: center;
+}
+
+section h2 {
+  text-align: center;
+  padding: 2rem;
+}
+
+body {
+  background-color: #363636;
+  color: #f6f6f6;
+}
+
+a {
+  color: #f6f6f6;
+}
+
+.btn {
+  border: solid 0.15rem;
+  border-radius: 0.125rem;
+  background-color: #086cca;
+}
+.btn:hover {
+  color: black;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: row;
+  align-items: center;
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  background-color: #1b1b1b;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+nav ul li {
+  padding: 0.7rem;
+}
+
+#about {
+  background-color: #ffba00;
+}
+
+#projects {
+  background-color: #e9003a;
+}
+
+#skills {
+  background-color: #7342fa;
 }
 
 /*# sourceMappingURL=style.css.map */

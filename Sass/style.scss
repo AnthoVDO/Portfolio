@@ -1,7 +1,85 @@
 @import "libs/minireset.scss";
+// colors
+$yellow:#ffba00; //section about
+$red:#e9003a; //section project
+$purple:#7342fa; //skills
+$white:#f6f6f6; //color
+$black:#363636; //mainbackground
+$blue:#086cca; //button
+$nav:#1b1b1b; //nav background
 h1 {
-    color: blue;
+    display: block;
+}
+
+h2 {
+    display: block;
+}
+
+section h1 {
+    padding: 2rem;
+    text-align: center;
+}
+
+section h2 {
+    text-align: center;
+    padding: 2rem;
+}
+
+body {
+    background-color: $black;
+    color: $white;
+}
+
+a {
+    color: $white;
+}
+
+.btn {
+    border: solid 0.15rem;
+    border-radius: 0.125rem;
+    background-color: $blue;
     &:hover {
-        color: darken($color: blue, $amount: 20);
+        color: darken($color: #000000, $amount: 0)
     }
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    background-color: $nav;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav ul li {
+    padding: 0.7rem;
+}
+
+#about {
+    background-color: $yellow;
+}
+
+#projects {
+    background-color: $red;
+}
+
+#skills {
+    background-color: $purple;
 }

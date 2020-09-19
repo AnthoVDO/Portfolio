@@ -100,6 +100,7 @@ body {
 
 a {
   color: #f6f6f6;
+  text-decoration: none;
 }
 
 .btn {
@@ -120,10 +121,6 @@ section {
   height: 100vh;
   flex-direction: row;
   flex-wrap: wrap;
-}
-
-#welcome-section {
-  align-items: center;
 }
 
 nav {
@@ -160,17 +157,50 @@ section header {
   padding-top: 4rem;
 }
 
+#welcome-section {
+  align-items: center;
+}
 #welcome-section h1 {
   width: 100%;
-  padding-top: 25%;
   font-size: 4rem;
+  padding-bottom: 10%;
 }
 #welcome-section h2 {
   width: 100%;
-  padding-bottom: 25%;
   font-size: 2rem;
+  padding-bottom: 10%;
+}
+#welcome-section a {
+  display: block;
+  text-align: center;
+  margin-left: 35%;
+  margin-right: 35%;
 }
 
+#projects article .bottom-section, #projects article .top-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 50%;
+}
+#projects article .bottom-section .project-tile header, #projects article .top-section .project-tile header {
+  width: 100%;
+  height: 3rem;
+}
+
+#projects header {
+  height: 20%;
+}
+#projects header h4 {
+  font-size: 1.5rem;
+}
+#projects article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 #about {
   background-color: #ffba00;
 }

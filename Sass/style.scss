@@ -42,6 +42,7 @@ a {
 
 section {
     display: flex;
+    align-items: stretch;
     justify-content: center;
     height: 100vh;
     flex-direction: row;
@@ -102,76 +103,29 @@ section header {
     }
 }
 
-%setSection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    height: 50%;
-    .project-tile {
-        header {
-            width: 100%;
-            height: 3rem;
-        }
-    }
-}
-
-#projects {
-    header {
-        height: 20%;
-        h4 {
-            font-size: 1.5rem;
-        }
-    }
-    article {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        .top-section {
-            @extend %setSection;
-        }
-        .bottom-section {
-            @extend %setSection;
-        }
-    }
-}
-
 #about {
     background-color: $yellow;
-    article {
-        display: block;
+    text-align: center;
+    h4 {
+        margin-bottom: 6rem;
+        font-size: 1.3rem;
     }
-}
-
-#projects {
-    background-color: $red;
-}
-
-//skills
-#skills {
-    background-color: $purple;
-    progress[max] {
-        background-color: $yellow;
-    }
-    progress[value] {
-        background-color: $red;
-    }
-    li {
-        text-transform: uppercase;
-        height: 26px;
-    }
-    article {
+    #skills {
         display: flex;
+        justify-content: center;
         ul {
-            height: 10rem;
+            width: 20%;
+            li {
+                height: 26px;
+                text-transform: uppercase;
+            }
         }
     }
 }
 
+//projects
 .value {
     margin-top: 3px;
-    margin-left: 10px;
     background-color: $red;
     height: 20px;
     display: inline-block;
@@ -182,7 +136,7 @@ section header {
 
 .total {
     margin-top: 3px;
-    background-color: $yellow;
+    background-color: $white;
     height: 20px;
     display: inline-block;
     text-indent: -9999px;
@@ -258,4 +212,47 @@ section header {
 
 #pythontot {
     width: 99px;
+}
+
+%setSection {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-around;
+    width: 100%;
+    height: 50%;
+    .project-tile {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+    }
+}
+
+#projects {
+    background-color: $red;
+    header {
+        height: 5rem;
+        display: block;
+    }
+    h4 {
+        font-size: 1.5rem;
+        height: 4rem;
+        text-align: center;
+    }
+    article {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: stretch;
+        width: 75%;
+        .top-section {
+            @extend %setSection;
+        }
+        .bottom-section {
+            @extend %setSection;
+        }
+    }
 }

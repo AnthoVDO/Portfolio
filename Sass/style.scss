@@ -148,6 +148,114 @@ section header {
     background-color: $red;
 }
 
+//skills
 #skills {
     background-color: $purple;
+    progress[max] {
+        background-color: $yellow;
+    }
+    progress[value] {
+        background-color: $red;
+    }
+    li {
+        text-transform: uppercase;
+        height: 26px;
+    }
+    article {
+        display: flex;
+        ul {
+            height: 10rem;
+        }
+    }
+}
+
+.value {
+    margin-top: 3px;
+    margin-left: 10px;
+    background-color: $red;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    line-height: 26px;
+    text-indent: -9999px;
+}
+
+.total {
+    margin-top: 3px;
+    background-color: $yellow;
+    height: 20px;
+    display: inline-block;
+    text-indent: -9999px;
+    line-height: 26px;
+}
+
+.skilltxt {
+    line-height: 26px;
+    height: 20px;
+    width: 150px;
+    flex: none;
+    display: inline-block;
+}
+
+//html
+#htmlval {
+    width: 70px;
+}
+
+#htmltot {
+    width: 30px;
+}
+
+//css
+#cssval {
+    width: 70px;
+}
+
+#csstot {
+    width: 30px;
+}
+
+//javascript
+#javascriptval {
+    width: 50px;
+}
+
+#javascripttot {
+    width: 50px;
+}
+
+//sass
+#sassval {
+    width: 50px;
+}
+
+#sasstot {
+    width: 50px;
+}
+
+//Jquery
+#jqueryval {
+    width: 20px;
+}
+
+#jquerytot {
+    width: 80px;
+}
+
+//react
+#reactval {
+    width: 1px;
+}
+
+#reacttot {
+    width: 99px;
+}
+
+//python
+#pythonval {
+    width: 1px;
+}
+
+#pythontot {
+    width: 99px;
 }

@@ -215,5 +215,105 @@ section header {
 #skills {
   background-color: #7342fa;
 }
+#skills progress[max] {
+  background-color: #ffba00;
+}
+#skills progress[value] {
+  background-color: #e9003a;
+}
+#skills li {
+  text-transform: uppercase;
+  height: 26px;
+}
+#skills article {
+  display: flex;
+}
+#skills article ul {
+  height: 10rem;
+}
+
+.value {
+  margin-top: 3px;
+  margin-left: 10px;
+  background-color: #e9003a;
+  height: 20px;
+  display: inline-block;
+  text-align: center;
+  line-height: 26px;
+  text-indent: -9999px;
+}
+
+.total {
+  margin-top: 3px;
+  background-color: #ffba00;
+  height: 20px;
+  display: inline-block;
+  text-indent: -9999px;
+  line-height: 26px;
+}
+
+.skilltxt {
+  line-height: 26px;
+  height: 20px;
+  width: 150px;
+  flex: none;
+  display: inline-block;
+}
+
+#htmlval {
+  width: 70px;
+}
+
+#htmltot {
+  width: 30px;
+}
+
+#cssval {
+  width: 70px;
+}
+
+#csstot {
+  width: 30px;
+}
+
+#javascriptval {
+  width: 50px;
+}
+
+#javascripttot {
+  width: 50px;
+}
+
+#sassval {
+  width: 50px;
+}
+
+#sasstot {
+  width: 50px;
+}
+
+#jqueryval {
+  width: 20px;
+}
+
+#jquerytot {
+  width: 80px;
+}
+
+#reactval {
+  width: 1px;
+}
+
+#reacttot {
+  width: 99px;
+}
+
+#pythonval {
+  width: 1px;
+}
+
+#pythontot {
+  width: 99px;
+}
 
 /*# sourceMappingURL=style.css.map */

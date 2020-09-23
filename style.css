@@ -82,6 +82,18 @@ th:not([align]) {
   text-align: left;
 }
 
+h1 {
+  font-family: "Courgette", cursive;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Righteous", cursive;
+}
+
 h1,
 h2 {
   width: 100%;
@@ -101,6 +113,7 @@ body {
   justify-content: center;
   align-content: center;
   width: 100vw;
+  font-family: "Oswald", sans-serif;
 }
 
 #container {
@@ -143,7 +156,6 @@ nav {
   align-content: center;
   width: 100%;
   background-color: #1b1b1b;
-  height: 3rem;
   max-width: 1300px;
 }
 nav header {
@@ -158,8 +170,16 @@ nav ul {
 }
 
 nav ul li {
-  padding: 0.7rem;
+  padding: 1rem;
   text-transform: uppercase;
+  transition: 0.7s;
+}
+nav ul li a {
+  padding: 1rem;
+}
+nav ul li a:hover {
+  background-color: #9b9b9b;
+  border-radius: 0.7rem;
 }
 
 section header {
@@ -325,9 +345,10 @@ section header {
   align-items: center;
   background-color: #b6002d;
   border-radius: 1rem;
-  width: 32%;
+  width: 35%;
   padding: 0.2rem;
   height: 350px;
+  padding-top: 1rem;
 }
 #projects article .under-section .project-tile:hover {
   z-index: 1;

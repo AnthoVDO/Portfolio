@@ -299,10 +299,12 @@ section header {
 
 #projects {
   background-color: #e9003a;
+  height: 100%;
 }
 #projects header {
   height: 5rem;
   display: block;
+  padding-bottom: 5rem;
 }
 #projects article {
   width: 95%;
@@ -314,6 +316,7 @@ section header {
   flex-direction: row;
   justify-content: space-around;
   margin: 0.3rem;
+  padding-bottom: 1.5rem;
 }
 #projects article .under-section .project-tile {
   display: flex;
@@ -322,7 +325,7 @@ section header {
   align-items: center;
   background-color: #b6002d;
   border-radius: 1rem;
-  width: 40%;
+  width: 32%;
   padding: 0.2rem;
   height: 350px;
 }
@@ -345,15 +348,19 @@ section header {
   border-radius: 1rem;
   width: 130px;
   margin-top: 1rem;
-  /*&:hover {
-      width: 350px;
-      z-index: 1;
-      transition: 0.5s;
-  }*/
 }
 #projects article .under-section .project-tile div {
   text-align: center;
   padding: 1rem;
+}
+#projects article .under-section .project-tile div a {
+  background-color: #e9003a;
+  padding: 0.5rem 7rem;
+  margin: 2rem 0;
+  border-radius: 1rem;
+}
+#projects article .under-section .project-tile div p {
+  margin-top: 1rem;
 }
 
 #contact article {

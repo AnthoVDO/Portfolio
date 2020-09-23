@@ -232,9 +232,11 @@ section header {
 
 #projects {
     background-color: $red;
+    height: 100%;
     header {
         height: 5rem;
         display: block;
+        padding-bottom: 5rem;
     }
     article {
         width: 95%;
@@ -245,6 +247,7 @@ section header {
             flex-direction: row;
             justify-content: space-around;
             margin: 0.3rem;
+            padding-bottom: 1.5rem;
             .project-tile {
                 display: flex;
                 flex-direction: column;
@@ -252,7 +255,7 @@ section header {
                 align-items: center;
                 background-color: darken($color: $red, $amount: 10);
                 border-radius: 1rem;
-                width: 40%;
+                width: 32%;
                 padding: 0.2rem;
                 height: 350px;
                 &:hover {
@@ -274,16 +277,19 @@ section header {
                     border-radius: 1rem;
                     width: 130px;
                     margin-top: 1rem;
-                    /*&:hover {
-                        width: 350px;
-                        z-index: 1;
-                        transition: 0.5s;
-                    }*/
                 }
                 div {
                     text-align: center;
                     padding: 1rem;
-                    //z-index: 1;
+                    a {
+                        background-color: $red;
+                        padding: 0.5rem 7rem;
+                        margin: 2rem 0;
+                        border-radius: 1rem;
+                    }
+                    p {
+                        margin-top: 1rem;
+                    }
                 }
             }
         }

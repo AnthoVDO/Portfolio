@@ -122,7 +122,8 @@ a {
   background-color: #086cca;
 }
 .btn:hover {
-  color: black;
+  color: #252525;
+  background-color: #72b8f9;
 }
 
 section {
@@ -186,6 +187,11 @@ section header {
   text-align: center;
   margin-left: 35%;
   margin-right: 35%;
+  transition: 0.6s;
+}
+#welcome-section a:hover {
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 #about {

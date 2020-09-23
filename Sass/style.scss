@@ -46,7 +46,8 @@ a {
     text-transform: uppercase;
     background-color: $blue;
     &:hover {
-        color: darken($color: #000000, $amount: 0);
+        color: darken($color: $white, $amount: 82);
+        background-color: lighten($color: $blue, $amount: 30);
     }
 }
 
@@ -110,6 +111,11 @@ section header {
         text-align: center;
         margin-left: 35%;
         margin-right: 35%;
+        transition: 0.6s;
+        &:hover {
+            margin-left: 25%;
+            margin-right: 25%;
+        }
     }
 }
 

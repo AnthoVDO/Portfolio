@@ -132,11 +132,11 @@ a {
   border-radius: 0.5rem;
   padding: 1rem;
   text-transform: uppercase;
-  background-color: #086cca;
+  background-color: #009CA6;
 }
 .btn:hover {
   color: #252525;
-  background-color: #72b8f9;
+  background-color: #40f3ff;
 }
 
 section {
@@ -157,6 +157,7 @@ nav {
   width: 100%;
   background-color: #1b1b1b;
   max-width: 1300px;
+  z-index: 2;
 }
 nav header {
   padding-left: 1rem;
@@ -178,8 +179,11 @@ nav ul li a {
   padding: 1rem;
 }
 nav ul li a:hover {
-  background-color: #9b9b9b;
+  background-color: #009CA6;
   border-radius: 0.7rem;
+  transform: translate(0, 5px);
+  display: inline-block;
+  transform: skew(-20deg);
 }
 
 section header {
@@ -201,6 +205,8 @@ section header {
   width: 100%;
   font-size: 2rem;
   padding-bottom: 10%;
+  color: #e9003a;
+  transform: skew(-20deg);
 }
 #welcome-section a {
   display: block;
@@ -212,15 +218,16 @@ section header {
 #welcome-section a:hover {
   margin-left: 25%;
   margin-right: 25%;
+  transform: skew(-20deg);
 }
 
 #about {
-  background-color: #ffba00;
+  background-color: #292929;
   text-align: center;
 }
 #about h4 {
   margin-bottom: 6rem;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 #about #skills {
   display: flex;
@@ -236,7 +243,7 @@ section header {
 
 .value {
   margin-top: 3px;
-  background-color: #e9003a;
+  background-color: #009CA6;
   height: 20px;
   display: inline-block;
   text-align: center;
@@ -318,7 +325,6 @@ section header {
 }
 
 #projects {
-  background-color: #e9003a;
   height: 100%;
 }
 #projects header {
@@ -343,7 +349,7 @@ section header {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: #b6002d;
+  background-color: #1d1d1d;
   border-radius: 1rem;
   width: 35%;
   padding: 0.2rem;
@@ -352,7 +358,7 @@ section header {
 }
 #projects article .under-section .project-tile:hover {
   z-index: 1;
-  background-color: darkgoldenrod;
+  background-color: #009CA6;
   transition: 0.5s;
   height: 600px;
 }
@@ -384,11 +390,44 @@ section header {
   margin-top: 1rem;
 }
 
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: center;
+  background-color: #292929;
+}
+#contact h3 {
+  text-align: center;
+}
+#contact #page-link {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+#contact #page-link a {
+  font-size: 1.4rem;
+}
+#contact #page-link a:hover {
+  padding: 1.2rem;
+  transform: translate(0, 10px);
+  display: inline-block;
+  background-color: #1d1d1d;
+  border-radius: 1rem;
+  transform: skew(-20deg);
+}
 #contact article {
   padding: 2rem;
 }
-#contact article a img {
-  width: 200px;
+#contact article h4 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Courgette", cursive;
+  color: #e9003a;
 }
 
 /*# sourceMappingURL=style.css.map */

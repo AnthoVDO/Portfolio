@@ -1,8 +1,7 @@
 @import "libs/minireset.scss";
 // colors
-$yellow:#ffba00; //section about
+$azure:#009CA6; //section about
 $red:#e9003a; //section project
-$purple:#7342fa; //skills
 $white:#f6f6f6; //color
 $black:#363636; //mainbackground
 $blue:#086cca; //button
@@ -57,10 +56,10 @@ a {
     border-radius: 0.5rem;
     padding: 1rem;
     text-transform: uppercase;
-    background-color: $blue;
+    background-color: $azure;
     &:hover {
         color: darken($color: $white, $amount: 82);
-        background-color: lighten($color: $blue, $amount: 30);
+        background-color: lighten($color: $azure, $amount: 30);
     }
 }
 
@@ -81,8 +80,8 @@ nav {
     align-content: center;
     width: 100%;
     background-color: $nav;
-    //height: 3rem;
     max-width: 1300px;
+    z-index: 2;
     header {
         padding-left: 1rem;
     }
@@ -102,8 +101,11 @@ nav ul li {
     a {
         padding: 1rem;
         &:hover {
-            background-color: lighten($color: $nav, $amount: 50);
+            background-color: $azure;
             border-radius: 0.7rem;
+            transform: translate(0, 5px);
+            display: inline-block;
+            transform: skew(-20deg);
         }
     }
 }
@@ -125,6 +127,8 @@ section header {
         width: 100%;
         font-size: 2rem;
         padding-bottom: 10%;
+        color: $red;
+        transform: skew(-20deg);
     }
     align-items: center;
     a {
@@ -136,16 +140,17 @@ section header {
         &:hover {
             margin-left: 25%;
             margin-right: 25%;
+            transform: skew(-20deg);
         }
     }
 }
 
 #about {
-    background-color: $yellow;
+    background-color: darken($color: $black, $amount: 5);
     text-align: center;
     h4 {
         margin-bottom: 6rem;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
     #skills {
         display: flex;
@@ -163,7 +168,7 @@ section header {
 //projects
 .value {
     margin-top: 3px;
-    background-color: $red;
+    background-color: $azure;
     height: 20px;
     display: inline-block;
     text-align: center;
@@ -252,7 +257,7 @@ section header {
 }
 
 #projects {
-    background-color: $red;
+    //background-color: $red;
     height: 100%;
     header {
         height: 5rem;
@@ -274,7 +279,7 @@ section header {
                 flex-direction: column;
                 justify-content: space-around;
                 align-items: center;
-                background-color: darken($color: $red, $amount: 10);
+                background-color: darken($color: $black, $amount: 10);
                 border-radius: 1rem;
                 width: 35%;
                 padding: 0.2rem;
@@ -282,7 +287,7 @@ section header {
                 padding-top: 1rem;
                 &:hover {
                     z-index: 1;
-                    background-color: darkgoldenrod;
+                    background-color: $azure;
                     transition: 0.5s;
                     height: 600px;
                     img {
@@ -319,12 +324,41 @@ section header {
 }
 
 #contact {
+    h3 {
+        text-align: center;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: center;
+    background-color: darken($color: $black, $amount: 5);
+    #page-link {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-around;
+        align-items: center;
+        a {
+            font-size: 1.4rem;
+            &:hover {
+                padding: 1.2rem;
+                transform: translate(0, 10px);
+                display: inline-block;
+                background-color: darken($color: $black, $amount: 10);
+                border-radius: 1rem;
+                transform: skew(-20deg);
+            }
+        }
+    }
     article {
         padding: 2rem;
-        a {
-            img {
-                width: 200px;
-            }
+        h4 {
+            text-align: center;
+            font-size: 3rem;
+            font-family: 'Courgette', cursive;
+            color: $red;
         }
     }
 }

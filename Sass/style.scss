@@ -1,364 +1,395 @@
-@import "libs/minireset.scss";
-// colors
-$azure:#009CA6; //section about
-$red:#e9003a; //section project
-$white:#f6f6f6; //color
-$black:#363636; //mainbackground
-$blue:#086cca; //button
-$nav:#1b1b1b; //nav background
-h1 {
-    font-family: 'Courgette', cursive;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-    font-family: 'Righteous', cursive;
-}
-
-h1,
-h2 {
-    width: 100%;
-    text-align: center;
-}
-
-h2,
-h3 {
-    font-size: 3rem;
-}
-
-body {
-    background-color: $black;
-    color: $white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    width: 100vw;
-    font-family: 'Oswald', sans-serif;
-}
-
-#container {
-    max-width: 1300px;
-    width: 100%;
-}
-
-a {
-    color: $white;
-    text-decoration: none;
-}
-
-.btn {
-    text-align: center;
-    border: solid 0.15rem;
-    border-radius: 0.5rem;
-    padding: 1rem;
-    text-transform: uppercase;
-    background-color: $azure;
-    &:hover {
-        color: darken($color: $white, $amount: 82);
-        background-color: lighten($color: $azure, $amount: 30);
-    }
-}
-
-section {
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-nav {
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-    width: 100%;
-    background-color: $nav;
-    max-width: 1300px;
-    z-index: 2;
-    header {
-        padding-left: 1rem;
-    }
-}
-
-nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-right: 1rem;
-}
-
-nav ul li {
-    padding: 1rem;
-    text-transform: uppercase;
-    transition: 0.7s;
-    a {
-        padding: 1rem;
-        &:hover {
-            background-color: $azure;
-            border-radius: 0.7rem;
-            transform: translate(0, 5px);
-            display: inline-block;
-            transform: skew(-20deg);
-        }
-    }
-}
-
-section header {
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-    padding-top: 4rem;
-}
-
-#welcome-section {
+    @import "libs/minireset.scss";
+    // colors
+    $azure:#009CA6; //section about
+    $red:#e9003a; //section project
+    $white:#f6f6f6; //color
+    $black:#363636; //mainbackground
+    $blue:#086cca; //button
+    $nav:#1b1b1b; //nav background
     h1 {
-        width: 100%;
-        font-size: 4rem;
-        padding-bottom: 10%;
+        font-family: 'Courgette', cursive;
     }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: 'Righteous', cursive;
+    }
+    
+    h1,
     h2 {
         width: 100%;
-        font-size: 2rem;
-        padding-bottom: 10%;
-        color: $red;
-        transform: skew(-20deg);
-    }
-    align-items: center;
-    a {
-        display: block;
         text-align: center;
-        margin-left: 35%;
-        margin-right: 35%;
-        transition: 0.6s;
+    }
+    
+    h2,
+    h3 {
+        font-size: 3rem;
+    }
+    
+    body {
+        background-color: $black;
+        color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        width: 100vw;
+        font-family: 'Oswald', sans-serif;
+    }
+    
+    #container {
+        max-width: 1300px;
+        width: 100%;
+    }
+    
+    a {
+        color: $white;
+        text-decoration: none;
+    }
+    
+    .btn {
+        text-align: center;
+        border: solid 0.15rem;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        text-transform: uppercase;
+        background-color: $azure;
         &:hover {
-            margin-left: 25%;
-            margin-right: 25%;
-            transform: skew(-20deg);
+            color: darken($color: $white, $amount: 82);
+            background-color: lighten($color: $azure, $amount: 30);
         }
     }
-}
-
-#about {
-    background-color: darken($color: $black, $amount: 5);
-    text-align: center;
-    h4 {
-        margin-bottom: 6rem;
-        font-size: 1.5rem;
-    }
-    #skills {
+    
+    section {
         display: flex;
         justify-content: center;
-        ul {
-            width: 20%;
-            li {
-                height: 26px;
-                text-transform: uppercase;
-            }
-        }
+        height: 100vh;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
-}
-
-//projects
-.value {
-    margin-top: 3px;
-    background-color: $azure;
-    height: 20px;
-    display: inline-block;
-    text-align: center;
-    line-height: 26px;
-    text-indent: -9999px;
-}
-
-.total {
-    margin-top: 3px;
-    background-color: $white;
-    height: 20px;
-    display: inline-block;
-    text-indent: -9999px;
-    line-height: 26px;
-}
-
-.skilltxt {
-    line-height: 26px;
-    height: 20px;
-    width: 150px;
-    flex: none;
-    display: inline-block;
-}
-
-//html
-#htmlval {
-    width: 70px;
-}
-
-#htmltot {
-    width: 30px;
-}
-
-//css
-#cssval {
-    width: 70px;
-}
-
-#csstot {
-    width: 30px;
-}
-
-//javascript
-#javascriptval {
-    width: 50px;
-}
-
-#javascripttot {
-    width: 50px;
-}
-
-//sass
-#sassval {
-    width: 50px;
-}
-
-#sasstot {
-    width: 50px;
-}
-
-//Jquery
-#jqueryval {
-    width: 20px;
-}
-
-#jquerytot {
-    width: 80px;
-}
-
-//react
-#reactval {
-    width: 1px;
-}
-
-#reacttot {
-    width: 99px;
-}
-
-//python
-#pythonval {
-    width: 1px;
-}
-
-#pythontot {
-    width: 99px;
-}
-
-#projects {
-    //background-color: $red;
-    height: 100%;
-    header {
-        height: 5rem;
-        display: block;
-        padding-bottom: 5rem;
-    }
-    article {
-        width: 95%;
-        display: flex;
-        flex-direction: column;
-        .under-section {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            margin: 0.3rem;
-            padding-bottom: 1.5rem;
-            .project-tile {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-                align-items: center;
-                background-color: darken($color: $black, $amount: 10);
-                border-radius: 1rem;
-                width: 35%;
-                padding: 0.2rem;
-                height: 350px;
-                padding-top: 1rem;
-                &:hover {
-                    z-index: 1;
-                    background-color: $azure;
-                    transition: 0.5s;
-                    height: 600px;
-                    img {
-                        width: 350px;
-                        transition: 0.5s;
-                    }
-                }
-                h4 {
-                    font-size: 1.5rem;
-                    height: 2.5rem;
-                    text-align: center;
-                }
-                img {
-                    border-radius: 1rem;
-                    width: 130px;
-                    margin-top: 1rem;
-                }
-                div {
-                    text-align: center;
-                    padding: 1rem;
-                    a {
-                        background-color: $red;
-                        padding: 0.5rem 7rem;
-                        margin: 2rem 0;
-                        border-radius: 1rem;
-                    }
-                    p {
-                        margin-top: 1rem;
-                    }
-                }
-            }
-        }
-    }
-}
-
-#contact {
-    h3 {
-        text-align: center;
-    }
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: stretch;
-    align-content: center;
-    background-color: darken($color: $black, $amount: 5);
-    #page-link {
-        width: 100%;
+    
+    nav {
+        position: fixed;
         display: flex;
         flex-direction: row;
-        align-content: center;
         justify-content: space-around;
         align-items: center;
+        align-content: center;
+        width: 100%;
+        background-color: $nav;
+        max-width: 1300px;
+        z-index: 2;
+        header {
+            padding-left: 1rem;
+        }
+    }
+    
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-right: 1rem;
+    }
+    
+    nav ul li {
+        padding: 1rem;
+        text-transform: uppercase;
+        transition: 0.7s;
         a {
-            font-size: 1.4rem;
+            padding: 1rem;
             &:hover {
-                padding: 1.2rem;
-                transform: translate(0, 10px);
+                background-color: $azure;
+                border-radius: 0.7rem;
+                transform: translate(0, 5px);
                 display: inline-block;
-                background-color: darken($color: $black, $amount: 10);
-                border-radius: 1rem;
                 transform: skew(-20deg);
             }
         }
     }
-    article {
-        padding: 2rem;
-        h4 {
-            text-align: center;
-            font-size: 3rem;
-            font-family: 'Courgette', cursive;
+    
+    section header {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        padding-top: 4rem;
+    }
+    
+    #welcome-section {
+        h1 {
+            width: 100%;
+            font-size: 4rem;
+            padding-bottom: 10%;
+        }
+        h2 {
+            width: 100%;
+            font-size: 2rem;
+            padding-bottom: 10%;
             color: $red;
+            transform: skew(-20deg);
+        }
+        align-items: center;
+        a {
+            display: block;
+            text-align: center;
+            margin-left: 35%;
+            margin-right: 35%;
+            transition: 0.6s;
+            &:hover {
+                margin-left: 25%;
+                margin-right: 25%;
+                transform: skew(-20deg);
+            }
         }
     }
-}
+    
+    #about {
+        background-color: darken($color: $black, $amount: 5);
+        text-align: center;
+        h4 {
+            margin-bottom: 6rem;
+            font-size: 1.5rem;
+        }
+        #skills {
+            display: flex;
+            justify-content: center;
+            ul {
+                width: 20%;
+                li {
+                    height: 26px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    
+    //projects
+    .value {
+        margin-top: 3px;
+        background-color: $azure;
+        height: 20px;
+        display: inline-block;
+        text-align: center;
+        line-height: 26px;
+        text-indent: -9999px;
+    }
+    
+    .total {
+        margin-top: 3px;
+        background-color: $white;
+        height: 20px;
+        display: inline-block;
+        text-indent: -9999px;
+        line-height: 26px;
+    }
+    
+    .skilltxt {
+        line-height: 26px;
+        height: 20px;
+        width: 150px;
+        flex: none;
+        display: inline-block;
+    }
+    
+    //html
+    #htmlval {
+        width: 70px;
+    }
+    
+    #htmltot {
+        width: 30px;
+    }
+    
+    //css
+    #cssval {
+        width: 70px;
+    }
+    
+    #csstot {
+        width: 30px;
+    }
+    
+    //javascript
+    #javascriptval {
+        width: 50px;
+    }
+    
+    #javascripttot {
+        width: 50px;
+    }
+    
+    //sass
+    #sassval {
+        width: 50px;
+    }
+    
+    #sasstot {
+        width: 50px;
+    }
+    
+    //Jquery
+    #jqueryval {
+        width: 20px;
+    }
+    
+    #jquerytot {
+        width: 80px;
+    }
+    
+    //react
+    #reactval {
+        width: 1px;
+    }
+    
+    #reacttot {
+        width: 99px;
+    }
+    
+    //python
+    #pythonval {
+        width: 1px;
+    }
+    
+    #pythontot {
+        width: 99px;
+    }
+    
+    #projects {
+        //background-color: $red;
+        height: 100%;
+        header {
+            height: 5rem;
+            display: block;
+            padding-bottom: 5rem;
+        }
+        article {
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+            .under-section {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                margin: 0.3rem;
+                padding-bottom: 1.5rem;
+                .project-tile {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    background-color: darken($color: $black, $amount: 10);
+                    border-radius: 1rem;
+                    width: 35%;
+                    padding: 0.2rem;
+                    height: 350px;
+                    padding-top: 1rem;
+                    &:hover {
+                        z-index: 1;
+                        background-color: $azure;
+                        transition: 0.5s;
+                        height: 600px;
+                        img {
+                            width: 350px;
+                            transition: 0.5s;
+                        }
+                    }
+                    h4 {
+                        font-size: 1.5rem;
+                        height: 2.5rem;
+                        text-align: center;
+                    }
+                    img {
+                        border-radius: 1rem;
+                        width: 130px;
+                        margin-top: 1rem;
+                    }
+                    div {
+                        text-align: center;
+                        padding: 1rem;
+                        a {
+                            background-color: $red;
+                            padding: 0.5rem 7rem;
+                            margin: 2rem 0;
+                            border-radius: 1rem;
+                        }
+                        p {
+                            margin-top: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    #contact {
+        h3 {
+            text-align: center;
+        }
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: stretch;
+        align-content: center;
+        background-color: darken($color: $black, $amount: 5);
+        #page-link {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: space-around;
+            align-items: center;
+            a {
+                font-size: 1.4rem;
+                &:hover {
+                    padding: 1.2rem;
+                    transform: translate(0, 10px);
+                    display: inline-block;
+                    background-color: darken($color: $black, $amount: 10);
+                    border-radius: 1rem;
+                    transform: skew(-20deg);
+                }
+            }
+        }
+        article {
+            padding: 2rem;
+            h4 {
+                text-align: center;
+                font-size: 3rem;
+                font-family: 'Courgette', cursive;
+                color: $red;
+            }
+        }
+    }
+    
+    //responsive
+    @media (max-width: 850px) {
+        #projects article .under-section .project-tile div a {
+            padding: 0.5rem 6rem;
+        }
+    }
+    
+    @media (max-width: 740px) {
+        #projects article .under-section .project-tile div a {
+            padding: 0.5rem 5rem;
+        }
+    }
+    
+    @media (max-width: 630px) {
+        #projects article .under-section .project-tile div a {
+            padding: 0.5rem 4rem;
+        }
+    }
+    
+    @media (max-width: 520px) {
+        #projects article .under-section .project-tile div a {
+            padding: 0.5rem 3rem;
+        }
+    }
+    
+    @media (max-width: 410px) {
+        #projects article .under-section .project-tile div a {
+            padding: 0.5rem 2rem;
+        }
+    }

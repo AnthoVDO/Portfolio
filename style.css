@@ -430,4 +430,30 @@ section header {
   color: #e9003a;
 }
 
+@media (max-width: 850px) {
+  #projects article .under-section .project-tile div a {
+    padding: 0.5rem 6rem;
+  }
+}
+@media (max-width: 740px) {
+  #projects article .under-section .project-tile div a {
+    padding: 0.5rem 5rem;
+  }
+}
+@media (max-width: 630px) {
+  #projects article .under-section .project-tile div a {
+    padding: 0.5rem 4rem;
+  }
+}
+@media (max-width: 520px) {
+  #projects article .under-section .project-tile div a {
+    padding: 0.5rem 3rem;
+  }
+}
+@media (max-width: 410px) {
+  #projects article .under-section .project-tile div a {
+    padding: 0.5rem 2rem;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -149,17 +149,24 @@
         background-color: darken($color: $black, $amount: 5);
         text-align: center;
         h4 {
-            margin-bottom: 6rem;
+            margin-bottom: 4rem;
             font-size: 1.5rem;
         }
         #skills {
             display: flex;
             justify-content: center;
+            margin-bottom: 1rem;
             ul {
                 width: 20%;
                 li {
+                    text-align: center;
                     height: 26px;
                     text-transform: uppercase;
+                    width: 115px;
+                    .skilltxt {
+                        text-align: left;
+                        padding-left: 1rem;
+                    }
                 }
             }
         }
@@ -260,9 +267,9 @@
         //background-color: $red;
         height: 100%;
         header {
-            height: 5rem;
-            display: block;
-            padding-bottom: 5rem;
+            h3 {
+                margin-bottom: 2rem;
+            }
         }
         article {
             width: 95%;
@@ -332,6 +339,7 @@
         justify-content: space-around;
         align-items: stretch;
         align-content: center;
+        flex-wrap: wrap;
         background-color: darken($color: $black, $amount: 5);
         #page-link {
             width: 100%;
@@ -340,6 +348,7 @@
             align-content: center;
             justify-content: space-around;
             align-items: center;
+            flex-wrap: wrap;
             a {
                 font-size: 1.4rem;
                 &:hover {
@@ -377,19 +386,127 @@
     }
     
     @media (max-width: 630px) {
+        nav {
+            flex-direction: column;
+        }
         #projects article .under-section .project-tile div a {
             padding: 0.5rem 4rem;
         }
-    }
-    
-    @media (max-width: 520px) {
-        #projects article .under-section .project-tile div a {
-            padding: 0.5rem 3rem;
+        #about {
+            height: 100%;
+        }
+        #contact {
+            height: 100%;
         }
     }
     
-    @media (max-width: 410px) {
+    @media (max-width: 550px) {
+        #projects article .under-section .project-tile div a {
+            padding: 0.5rem 3rem;
+        }
+        #projects article .under-section .project-tile {
+            width: 95%;
+            margin: 1rem;
+        }
+        #projects article .under-section {
+            flex-direction: column;
+            //justify-content: center !important;
+        }
+        #welcome-section {
+            h1 {
+                font-size: 2.5rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+        #about {
+            h3 {
+                margin-bottom: 1rem;
+            }
+            h4 {
+                font-size: 1rem;
+            }
+        }
+        #contact {
+            article {
+                h4 {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+    
+    @media (max-width: 450px) {
         #projects article .under-section .project-tile div a {
             padding: 0.5rem 2rem;
+        }
+        nav {
+            ul {
+                justify-content: center;
+                padding-right: 0;
+                li {
+                    padding: 0.5rem 0.2rem;
+                }
+            }
+        }
+    }
+    
+    @media(max-width: 400px) {
+        h3 {
+            font-size: 2rem;
+        }
+        nav {
+            ul {
+                li {
+                    padding: 0.5rem 0;
+                    font-size: 0.8rem;
+                }
+            }
+        }
+        #welcome-section {
+            h2 {
+                margin-left: -0.3rem;
+            }
+        }
+        #about {
+            #skills {
+                padding-bottom: 3rem;
+                ul {
+                    width: 50%;
+                    li {
+                        .skilltxt {
+                            padding-left: 0;
+                            font-size: 0.8rem;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+        #projects {
+            article {
+                .under-section {
+                    .project-tile {
+                        width: 90%;
+                    }
+                }
+            }
+        }
+        #contact {
+            article {
+                h4 {
+                    font-size: 1.5rem;
+                }
+            }
+            #page-link {
+                display: inline;
+                width: 100%;
+                text-align: center;
+                article {
+                    padding: 0.5rem;
+                }
+                margin-bottom: 1rem;
+            }
         }
     }

@@ -82,7 +82,7 @@
         background-color: $nav;
         max-width: 1300px;
         z-index: 2;
-        header {
+        div {
             padding-left: 1rem;
         }
     }
@@ -350,14 +350,16 @@
             align-items: center;
             flex-wrap: wrap;
             a {
-                font-size: 1.4rem;
-                &:hover {
-                    padding: 1.2rem;
-                    transform: translate(0, 10px);
-                    display: inline-block;
-                    background-color: darken($color: $black, $amount: 10);
-                    border-radius: 1rem;
-                    transform: skew(-20deg);
+                h5 {
+                    font-size: 1rem;
+                    &:hover {
+                        padding: 1.2rem;
+                        transform: translate(0, 10px);
+                        display: inline-block;
+                        background-color: darken($color: $black, $amount: 10);
+                        border-radius: 1rem;
+                        transform: skew(-20deg);
+                    }
                 }
             }
         }
@@ -501,12 +503,10 @@
             }
             #page-link {
                 display: inline;
-                width: 100%;
                 text-align: center;
                 article {
                     padding: 0.5rem;
                 }
-                margin-bottom: 1rem;
             }
         }
     }
